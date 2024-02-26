@@ -2,6 +2,8 @@
 
 <head>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -9,30 +11,46 @@
 <style>
     .container {
         background-color: white;
-        height: 400px;
+
+        /* height: 400px; */
         width: 350px;
         margin: auto;
         margin-top: 33px;
+
         padding: 30px;
+
+
     }
 
     h2 {
         color: black;
+        /* margin-bottom:-30px;
+            margin-left: 30%; */
         font-size: 50px;
         text-align: center;
+
         font-family: "calibri";
         font-size: 35;
+
+
+
+
+
+
+
     }
+
+
+
+
 
     .main {
         background-color: white;
         width: 410px;
         height: 60px;
-        margin-left: -30px;
+       margin: auto;
     }
-    .main h4{
-        margin-right: 29px;
-    }
+
 
     body {
         background-image: url(insta.jfif);
@@ -41,9 +59,11 @@
     }
 
     input {
+        /* margin-left: 30px; */
         width: 100%;
         height: 15px;
         padding: 20px;
+
         height: 5px;
         border: 1px solid rgba(86, 83, 83, 0.605);
         border-radius: 3px;
@@ -66,17 +86,35 @@
         text-align: center;
         font-weight: bold;
     }
+    .or{
+        text-align: center;
+        position: relative;
+    }
 
     .b::placeholder {
         color: white;
     }
 
     .or::before {
-        content: "----------------------------";
+        top:8px;
+        content: "";
+        left: 10px;
+        width: 40%;
+        position: absolute;
+        background-color: none;
+        border: 1px dashed #000;
+        height: 0px;
     }
 
     .or::after {
-        content: "------------------------------";
+        top:8px;
+        content: "";
+        right: 10px;
+        width: 40%;
+        position: absolute;
+        background-color: none;
+        border: 1px dashed #000;
+        height: 0px;
     }
 
     i {
@@ -101,7 +139,7 @@
     .account {
         text-align: center;
         padding: 20px;
-        margin-left: -50px;
+        margin-left: -25px;
 
 
     }
@@ -112,17 +150,36 @@
         margin-left: 48%;
 
         color: rgb(22, 158, 212);
+
+
+
+
     }
 
     img {
         margin-top: -5%;
+    }
+
+    @media (max-width:768px) {
+        .container {
+            width: auto;
+            /* height: auto; */
+        }
+
+        .main {
+            width: 100%;
+            margin: 0;
+        }
+        .signup{
+            color: rgb(22, 158, 212);
+        }
     }
 </style>
 
 
 <body>
     <div class="container">
-        <img src="gram.png" width="300px" height="125px">
+        <img src="C:\Users\TANISHA\Desktop\TANISHA HTML\gram.png">
         <input type="text" placeholder="Phone number,username or email address">
         <input class="a" type="password" placeholder="password">
         <input class="b" type="text" name="Log in" placeholder="Log in">
@@ -135,16 +192,14 @@
         <p class="log">Log in with Facebook</p>
 
         <p class="for">Forgot password?</p>
-
-
-
-        <div class="main">
-            <p class="account">Don't have an account?</p>
-            <h4>Sign up.</h4>
-
-
-        </div>
     </div>
+
+
+    <div class="main">
+        <p class="account">Don't have an account? <span class="signup">SignUp</span></p>
+        
+    </div>
+
 </body>
 
 </html>
